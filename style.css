@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background: linear-gradient(135deg, #eef3ff, #f8faff);
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin: 55px auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: #5269d8;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: clamp(28px, 5vw, 40px);
+  color: #172554;
+}
+
+.subtitle {
+  margin: 0;
+  color: #667085;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card, .table-card {
+  background: #fff;
+  border: 1px solid #e5eaf5;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(31, 48, 91, 0.06);
+}
+
+.summary-card {
+  padding: 20px;
+  text-align: center;
+}
+
+.summary-card span {
+  display: block;
+  color: #667085;
+  font-size: 14px;
+}
+
+.summary-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 28px;
+}
+
+.pass-text {
+  color: #16834a;
+}
+
+.fail-text {
+  color: #d33b46;
+}
+
+.table-card {
+  padding: 24px;
+}
+
+.table-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.table-heading h2 {
+  margin: 0 0 6px;
+  color: #172554;
+}
+
+.table-heading p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+}
+
+.pill {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #eef2ff;
+  color: #4658bd;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 16px 14px;
+  border-bottom: 1px solid #edf0f6;
+}
+
+th {
+  background: #253b80;
+  color: #fff;
+  font-size: 13px;
+}
+
+th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+td {
+  color: #344054;
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: #f8faff;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status.pass {
+  color: #137443;
+  background: #e5f7ed;
+}
+
+.status.fail {
+  color: #b4232d;
+  background: #fdebed;
+}
+
+footer {
+  margin-top: 22px;
+  text-align: center;
+  color: #8992a5;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 30px auto;
+  }
+
+  .summary {
+    gap: 8px;
+  }
+
+  .summary-card {
+    padding: 14px 8px;
+  }
+
+  .summary-card span {
+    font-size: 12px;
+  }
+
+  .summary-card strong {
+    font-size: 23px;
+  }
+
+  .table-card {
+    padding: 15px;
+  }
+
+  th, td {
+    padding: 12px 10px;
+    white-space: nowrap;
+  }
+}

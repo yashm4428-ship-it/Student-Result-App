@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">FRONTEND LAB PROJECT</p>
+      <h1>Student Result Application</h1>
+      <p class="subtitle">Marks and pass/fail status for five students</p>
+    </header>
+
+    <section class="summary" aria-label="Class summary">
+      <div class="summary-card">
+        <span>Total Students</span>
+        <strong id="totalStudents">5</strong>
+      </div>
+      <div class="summary-card">
+        <span>Passed</span>
+        <strong class="pass-text" id="passedCount">0</strong>
+      </div>
+      <div class="summary-card">
+        <span>Failed</span>
+        <strong class="fail-text" id="failedCount">0</strong>
+      </div>
+    </section>
+
+    <section class="table-card">
+      <div class="table-heading">
+        <div>
+          <h2>Student Details</h2>
+          <p>Minimum passing mark: 40</p>
+        </div>
+        <span class="pill">5 Records</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Roll Number</th>
+              <th>Student Name</th>
+              <th>Marks</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody id="studentData"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>Student Result Application · HTML, CSS &amp; JavaScript</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
